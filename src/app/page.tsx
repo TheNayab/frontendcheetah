@@ -45,13 +45,15 @@ export default function Home() {
   const hidemodal = () => {
     setmodal(false);
   };
-
+  const authToken = Cookies.get("token");
   const getAllTask = async () => {
     try {
       const response = await axios.get(
         `https://cheetah-production.up.railway.app/api/v1/tasks`,
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
       if (response.data.success) {
@@ -65,7 +67,9 @@ export default function Home() {
       const response = await axios.get(
         `https://cheetah-production.up.railway.app/api/v1/logout`,
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
       console.log(response.data);
@@ -86,7 +90,9 @@ export default function Home() {
       const response = await axios.get(
         `https://cheetah-production.up.railway.app/api/v1/complete/${id}`,
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
       console.log(response.data);
@@ -105,6 +111,7 @@ export default function Home() {
 
   const createTask = async () => {
     try {
+      console.log("oncration" + authToken);
       setloading(true);
       const response = await axios.post(
         `https://cheetah-production.up.railway.app/api/v1/createtasks`,
@@ -112,7 +119,9 @@ export default function Home() {
           description,
         },
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
 
@@ -141,7 +150,9 @@ export default function Home() {
           description: updatedesc,
         },
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
 
@@ -169,7 +180,9 @@ export default function Home() {
       const response = await axios.delete(
         `https://cheetah-production.up.railway.app/api/v1/deletetask/${id}`,
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         }
       );
 
@@ -187,7 +200,7 @@ export default function Home() {
       setloading(false); // Set loading back to false after task creation process completes
     }
   };
-  const authToken = Cookies.get("token");
+
   useEffect(() => {
     if (!authToken) {
       router.push("/login");
