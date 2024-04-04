@@ -334,3 +334,106 @@ body {
   color: white;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1184px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    height: auto;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    height: auto;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: auto;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    height: auto;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    height: auto;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 469px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    height: auto;
+    width: 380px;
+  }
+  .addtask > button {
+    background-color: #caba95;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    height: auto;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 394px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    height: auto;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    height: auto;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 312px) {
+  .maindiv {
+    position: absolute;
+    top: 12%;
+    /* left: 2%; */
+    height: auto;
+    width: 250px;
+  }
+}

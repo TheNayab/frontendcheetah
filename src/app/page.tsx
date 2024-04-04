@@ -189,16 +189,16 @@ export default function Home() {
   };
   const authToken = Cookies.get("token");
   useEffect(() => {
-    if (!authToken) {
-      router.push("/login");
-    } else {
+    // if (!authToken) {
+    //   router.push("/login");
+    // } else {
       getAllTask();
-    }
+    // }
   }, []);
 
-  if (!authToken) {
-    return null;
-  }
+  // if (!authToken) {
+  //   return null;
+  // }
 
   return (
     <main>
