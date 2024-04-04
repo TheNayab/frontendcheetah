@@ -42,7 +42,13 @@ const Register = () => {
 
       if (data.success) {
         toast.success("User successfully register");
-        Cookies.set("token", data.authToken, { expires: 2 }); // Set the cookie named 'token' with a value and expiry time
+        Cookies.set("token", data.authToken, {
+          expires: 2,
+          domain: "cheetah-production.up.railway.app",
+          path: "/",
+          secure: true,
+          sameSite: "none",
+        }); // Set the cookie named 'token' with a value and expiry time
 
         setTimeout(() => {
           router.push("/"); // Redirect to home page after displaying the toast
