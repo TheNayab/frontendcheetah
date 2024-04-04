@@ -35,6 +35,7 @@ body {
 .maindiv2 > button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .emptymain {
   height: 100%;
@@ -361,6 +362,15 @@ body {
     height: auto;
     width: 450px;
   }
+  .modalmain {
+    top: 30%;
+    left: 17%;
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
+  }
 }
 @media screen and (max-width: 666px) {
   .maindiv {
@@ -371,6 +381,17 @@ body {
     width: 450px;
   }
 }
+@media screen and (max-width: 606px) {
+  .modalmain {
+    top: 30%;
+    left: 8%;
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
+  }
+}
 @media screen and (max-width: 575px) {
   .maindiv {
     position: absolute;
@@ -378,6 +399,26 @@ body {
     left: 13%;
     height: auto;
     width: 400px;
+  }
+  .modalmain {
+    top: 30%;
+    left: 1%;
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .modalmain {
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
   }
 }
 @media screen and (max-width: 469px) {
@@ -399,6 +440,15 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+  }
+  .modalmain {
+    top: 30%;
+    left: 2%;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -432,8 +482,16 @@ body {
   .maindiv {
     position: absolute;
     top: 12%;
-    /* left: 2%; */
     height: auto;
     width: 250px;
+  }
+  .modalmain {
+    top: 30%;
+    left: 2%;
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
   }
 }

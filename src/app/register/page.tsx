@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import "./register.css"; // Import the CSS file
 import axios from "axios";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
+import styles from "./register.module.css"; // Import the CSS module
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -78,51 +78,59 @@ const Register = () => {
   }
 
   return (
-    <div className="container">
-      {/* Apply container class */}
-      <ToastContainer />
+    <div className={styles.body}>
+      <div className={styles.container}>
+        {/* Apply container class */}
+        <ToastContainer />
 
-      <h2>Create Account</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="inputdiv">
-          <input
-            placeholder="Enter name"
-            type="text"
-            value={name}
-            onChange={(e) => setname(e.target.value)}
-          />
-        </div>
-        <div className="inputdiv">
-          <input
-            placeholder="Enter Email"
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="inputdiv">
-          <input
-            placeholder="Enter password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div className="inputdiv">
-          <input
-            placeholder="Enter comfirmpassword"
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setconfirmPassword(e.target.value)}
-          />
-        </div>
-        <div className="btn">
-          <button type="submit">Register</button>
-        </div>
-        <Link href="/login" scroll={false} className="register">
-          Already have account ?
-        </Link>
-      </form>
+        <h2 className={styles.h2}>Create Account</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.inputdiv}>
+            <input
+              className={styles.input}
+              placeholder="Enter name"
+              type="text"
+              value={name}
+              onChange={(e) => setname(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputdiv}>
+            <input
+              className={styles.input}
+              placeholder="Enter Email"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputdiv}>
+            <input
+              className={styles.input}
+              placeholder="Enter password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputdiv}>
+            <input
+              className={styles.input}
+              placeholder="Enter comfirmpassword"
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setconfirmPassword(e.target.value)}
+            />
+          </div>
+          <div className={styles.btn}>
+            <button type="submit" className={styles.button}>
+              Register
+            </button>
+          </div>
+          <Link href="/login" scroll={false} className={styles.register}>
+            Already have account ?
+          </Link>
+        </form>
+      </div>
     </div>
   );
 };
