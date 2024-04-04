@@ -45,9 +45,25 @@ npm run dev
 ```bash
 https://cheethwork.netlify.app/
 ```
+#### Home page
+![TodoList App](https://github.com/TheNayab/images/blob/master/home.png)
 
+#### Detail of task
+![TodoList App](https://github.com/TheNayab/images/blob/master/detail%20list.png)
 
+#### No task
+![TodoList App](https://github.com/TheNayab/images/blob/master/no%20task.png)
 
+#### Update task
+![TodoList App](https://github.com/TheNayab/images/blob/master/update.png)
 
+#### Login
+![TodoList App](https://github.com/TheNayab/images/blob/master/login.png)
+
+#### Whole application have proper Toast
+![TodoList App](https://github.com/TheNayab/images/blob/master/toast.png)
+
+#### Registration
+![TodoList App](https://github.com/TheNayab/images/blob/master/registration.png)
 
    
