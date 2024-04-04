@@ -41,6 +41,12 @@ npm run dev
 - Pending Tasks: List of pending tasks is displayed.
 - Real-time Updates: The application utilizes real-time updates for task management.
 
+# LIVE DEPLOYED URL
+```bash
+https://cheethwork.netlify.app/
+```
+
+
 
 
 
