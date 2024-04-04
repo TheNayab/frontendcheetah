@@ -256,7 +256,7 @@ export default function Home() {
                   <div className="mainstart">
                     {tasks &&
                       tasks.map((item: any, index: any) => (
-                        <div>
+                        <div key={index}>
                           <div className="addmain2">
                             <div className="taskheading3">
                               <div className="todoimage">
