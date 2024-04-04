@@ -91,6 +91,7 @@ const Register = () => {
               placeholder="Enter name"
               type="text"
               value={name}
+              required
               onChange={(e) => setname(e.target.value)}
             />
           </div>
@@ -100,6 +101,7 @@ const Register = () => {
               placeholder="Enter Email"
               type="text"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -108,12 +110,14 @@ const Register = () => {
               className={styles.input}
               placeholder="Enter password"
               type="password"
+              required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className={styles.inputdiv}>
             <input
+              required
               className={styles.input}
               placeholder="Enter comfirmpassword"
               type="password"
