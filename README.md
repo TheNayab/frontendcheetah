@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+TodoList App using Next.js
 
-## Getting Started
+This TodoList application is built using Next.js framework. It allows users to manage their tasks, including creating, updating, completing, and deleting tasks. The application utilizes real-time updates powered by Node.js backend and MongoDB database.
 
-First, run the development server:
+Getting Started
 
-```bash
+To get started with this application, follow these steps:
+
+Clone the repository to your local machine:
+git clone <repository_url>
+
+Navigate to the project directory:
+cd <project_directory>
+
+Install dependencies:
+npm install
+
+
+Running the Application
+
+After installing the dependencies, you can run the application using the following command:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features
+Authentication: user register and login
+Tokenization:during registration and login token will generate and whole application handle with it
+Create Task: Users can create new tasks.
+Delete Task: Tasks can be deleted.
+Update Task: Tasks can be updated.
+Complete Task: Users can mark tasks as complete.
+Pending Tasks: List of pending tasks is displayed.
+Real-time Updates: The application utilizes real-time updates for task management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! Feel free to open issues and pull requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
