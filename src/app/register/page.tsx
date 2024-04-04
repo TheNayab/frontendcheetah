@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
-const Register = () => {    
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
@@ -42,7 +42,7 @@ const Register = () => {
 
       if (data.success) {
         toast.success("User successfully register");
-        // Cookies.set("token", data.authToken, { expires: 2 }); // Set the cookie named 'token' with a value and expiry time
+        Cookies.set("token", data.authToken, { expires: 2 }); // Set the cookie named 'token' with a value and expiry time
 
         setTimeout(() => {
           router.push("/"); // Redirect to home page after displaying the toast
