@@ -39,7 +39,7 @@ const Login = () => {
 
       if (data.success) {
         toast.success("User login successfully");
-        Cookies.set("token", data.authToken, { expires: 2 }); // Set the cookie named 'token' with a value and expiry time
+        // Cookies.set("token", data.authToken, { expires: 2 }); // Set the cookie named 'token' with a value and expiry time
 
         router.push("/");
       } else {
