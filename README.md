@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TodoList App using Next.js
+
+This TodoList application is built using Next.js framework. It allows users to manage their tasks, including creating, updating, completing, and deleting tasks. The application utilizes real-time updates powered by Node.js backend and MongoDB database.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this application, follow these steps:
+
+1. Clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository_url>
+```
+2. Navigate to the project directory:
+
+```bash
+cd <project_directory>
+```
+3. Install dependencies:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Running the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+After installing the dependencies, you can run the application using the following command:
+```bash
+npm run dev
+```
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Authentication: User login and register
+- Tokenization: Whole application work on base of token
+- Create Task: Users can create new tasks.
+- Delete Task: Tasks can be deleted.
+- Update Task: Tasks can be updated.
+- Complete Task: Users can mark tasks as complete.
+- Pending Tasks: List of pending tasks is displayed.
+- Real-time Updates: The application utilizes real-time updates for task management.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# LIVE DEPLOYED URL
+```bash
+https://cheethwork.netlify.app/
+```
+#### Home page
+![TodoList App](https://github.com/TheNayab/images/blob/master/home.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Detail of task
+![TodoList App](https://github.com/TheNayab/images/blob/master/detail%20list.png)
 
-## Deploy on Vercel
+#### No task
+![TodoList App](https://github.com/TheNayab/images/blob/master/no%20task.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Update task
+![TodoList App](https://github.com/TheNayab/images/blob/master/update.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Login
+![TodoList App](https://github.com/TheNayab/images/blob/master/login.png)
+
+#### Whole application have proper Toast
+![TodoList App](https://github.com/TheNayab/images/blob/master/toast.png)
+
+#### Registration
+![TodoList App](https://github.com/TheNayab/images/blob/master/registration.png)
+
+   
