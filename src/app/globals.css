@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+  filter: brightness(0.8);
+  /* opacity: 0.5; */
+}
+
+.maindiv {
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  height: auto;
+  width: 450px;
+}
+.maindiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: auto;
+  background-color: transparent;
+  border: none;
+}
+.maindiv2 > button {
+  background-color: transparent;
+  border: none;
+}
+.emptymain {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maindiv2 > div {
+  font-weight: bold;
+  color: rgb(28, 28, 198);
+}
+.profilediv {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.addmain {
+  display: flex;
+  justify-content: center;
+}
+
+.addtask {
+  height: 45px;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.addtask > input {
+  border: none;
+  font-size: 15px;
+  width: 90%;
+}
+.addtask > input:hover {
+  border: none;
+  border-color: transparent;
+  font-size: 15px;
+}
+.addtask > input:focus {
+  outline: none;
+}
+
+.addtask > button {
+  background-color: #caba95;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.addtask > button > img {
+  height: 15px;
+  width: 15px;
+}
+
+.addmain2 {
+  display: flex;
+  justify-content: center;
+}
+
+.taskheading {
+  height: 45px;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: #c2927a;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(172, 170, 170);
+  box-shadow: 0px 4px 4px #caba95;
+  justify-content: space-between;
+}
+.taskheading3 > .todoimage > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.taskheading > .todoimage > img {
+  height: 30px;
+  width: 30px;
+}
+.taskheading > .todoimage > p {
+  color: white;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.todoimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addmain2 > .taskheading > button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.addmain2 > .taskheading > button > img {
+  margin-right: 8px;
+  height: 17px;
+  width: 17px;
+}
+.mainactivity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+}
+.mainstart {
+  width: 92%;
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background: linear-gradient(
+    to bottom,
+    rgb(186, 186, 186) 0%,
+    rgb(186, 186, 186) 5%,
+    white 5%,
+    white 95%,
+    rgb(186, 186, 186) 95%,
+    rgb(186, 186, 186) 100%
+  );
+}
+
+.taskheading3 {
+  height: 45px;
+  width: 100%;
+  /* margin-top: 14px; */
+  border-color: transparent;
+  padding-left: 10px;
+  background-color: rgb(186, 186, 186);
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(172, 170, 170);
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.addmain2 > .taskheading3 > .todoimage > button > img {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+.addmain2 > .taskheading3 > .todoimage > p {
+  font-size: 14px;
+}
+.addmain2 > .taskheading3 > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.addmain2 > .taskheading3 > button > img {
+  height: 20px;
+  width: 20px;
+}
+.complete {
+  display: flex;
+  padding-left: 12px;
+  margin-top: 6px;
+}
+.cotext {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin-right: 3px;
+}
+.cotextg {
+  font-size: 14px;
+  font-weight: 400;
+}
+.dltbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dltbtn > button {
+  height: 32px;
+  width: 100%;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 210, 210);
+  color: tomato;
+  font-weight: bold;
+  cursor: pointer;
+}
+.loading-container {
+  position: relative;
+  height: 100vh;
+}
+.desinput {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.btnedit {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.imgedit {
+  margin-left: 20px;
+}
+.desinput:hover {
+  border: none;
+  border-bottom: 2px solid black;
+}
+.desinput:focus {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.modalinput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalmain {
+  top: 30%;
+  left: 33%;
+  position: absolute;
+  height: 200px;
+  width: 500px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 13px;
+}
+
+.modalmainbtndiv {
+  width: 96%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.modalbtn {
+  height: 40px;
+  width: 7rem;
+  border-radius: 8px;
+  border: none;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.cancel {
+  height: 40px;
+  width: 7rem;
+  border-radius: 8px;
+  border: none;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
