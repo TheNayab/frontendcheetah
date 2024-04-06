@@ -73,7 +73,7 @@ const Register = () => {
     }
   }, []);
 
-  if (authToken == undefined) {
+  if (authToken) {
     return null;
   }
 

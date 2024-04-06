@@ -62,7 +62,7 @@ const Login = () => {
     }
   }, []);
 
-  if (authToken==undefined) {
+  if (authToken) {
     return null;
   }
 
