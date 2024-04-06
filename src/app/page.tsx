@@ -45,7 +45,7 @@ export default function Home() {
   const hidemodal = () => {
     setmodal(false);
   };
-  const authToken = Cookies.get("token");
+  let authToken: any;
   const getAllTask = async () => {
     try {
       const response = await axios.get(
@@ -202,6 +202,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    authToken = Cookies.get("token");
     if (!authToken) {
       router.push("/login");
     } else {

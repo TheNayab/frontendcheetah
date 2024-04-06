@@ -54,9 +54,10 @@ const Login = () => {
       }
     }
   };
-  const authToken = Cookies.get("token");
+  let authToken: any;
 
   useEffect(() => {
+    authToken = Cookies.get("token");
     if (authToken) {
       router.push("/");
     }
