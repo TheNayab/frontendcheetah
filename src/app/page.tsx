@@ -75,7 +75,8 @@ export default function Home() {
       console.log(response.data);
       if (response.data.success) {
         toast.success("User logout ");
-        Cookies.set("token", "", { expires: new Date(Date.now()) });
+        Cookies.remove("token");
+
         setTimeout(() => {
           router.push("/login"); // Redirect to home page after displaying the toast
         }, 1000);
