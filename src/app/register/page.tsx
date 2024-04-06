@@ -65,16 +65,15 @@ const Register = () => {
     }
   };
 
-  let authToken: any;
+  const authToken = Cookies.get("token");
 
   useEffect(() => {
-    authToken = Cookies.get("token");
     if (authToken) {
       router.push("/");
     }
   }, []);
 
-  if (authToken) {
+  if (authToken == undefined) {
     return null;
   }
 
